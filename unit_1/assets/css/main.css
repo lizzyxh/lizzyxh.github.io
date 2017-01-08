@@ -1,0 +1,22 @@
+body{
+	background-color:#dee2ff;
+}
+
+p, li{
+	color: #223150;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4{
+	color: #382d2b;
+	font-family: 'Raleway', sans-serif;
+}
+
+a{
+	color: #382d2b;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
