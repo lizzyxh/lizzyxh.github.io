@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	vertical-align: baseline;
 }
 
 body{
@@ -16,7 +17,7 @@ body{
 
 p {
     line-height: 1.5em;
-    margin: 2em;
+    margin: .67em auto;
 }
 
 main a{
@@ -38,12 +39,8 @@ ul{
 
 h1 {
     display: block;
-    margin: 2em auto;
     font-size: 2em;
-    /*-webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px; change to one */
+    margin: .67em auto;
     font-weight: bold;
     text-transform: capitalize;
 }
@@ -51,10 +48,7 @@ h1 {
 h2{
 	display: block;
     font-size: 1.5em;
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    margin: 0.83em auto;
     font-weight: bold;
     text-transform: capitalize;
     text-align: center;
@@ -82,7 +76,7 @@ aside{
 section{
 	background-color: #FFC688;
 	border: 1px black solid;
-    padding: 20px;
+    padding: 0px;
 
 }
 
@@ -104,6 +98,23 @@ div{
 	background-color:  #FFE2B8;
 	border: 1px black solid;
     padding: 20px;
+}
+
+img {
+	display: block;
+    margin: auto;
+    width: 100%;
+    /*padding: 2em;*/
+}
+
+figure{
+
+}
+
+figcaption{
+	background-color: white;
+    display: inline-block;
+    padding: 1em .5em .5em .5em;
 }
 
 /* Logo */
@@ -166,60 +177,6 @@ h3 {
     float: right;
 }
 
-/* Word Rotation */
-
-.rw-sentence {
-    text-align: justify;
-    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
-    margin: 0px 0px 2em;
-}
-
-	.rw-secondsentence {
-	    text-indent: 20px;
-	    text-align: inherit;
-	    margin: 0px;
-	}
-
-		.rw-words {
-		    display: inline-block;
-		    color: rgb(0, 159, 255);
-		    text-indent: 8px;
-		    text-align: inherit;
-		    margin: 0px;
-		}
-		.rw-words span {
-		    text-align: inherit;
-		    position: absolute;
-		    opacity: 0;
-		    overflow: hidden;
-		}
-			.rw-words-1 span{
-				animation: rotateWordsFirst 18s linear infinite 0s;
-			}
-			.rw-words span:nth-child(2) { 
-				animation-delay: 3s; 
-			}
-			.rw-words span:nth-child(3) { 
-				animation-delay: 6s; 
-			}
-			.rw-words span:nth-child(4) { 
-				animation-delay: 9s; 
-			}
-			.rw-words span:nth-child(5) { 
-				animation-delay: 12s; 
-			}
-			.rw-words span:nth-child(6) {  
-				animation-delay: 15s; 
-			}
-		@keyframes rotateWordsFirst {
-		    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
-		    8% { opacity: 1; height: 60px; }
-		    19% { opacity: 0; height: 60px; }
-			25% { opacity: 0; height: 60px; }
-		    100% { opacity: 0; }
-		}
-
-
 /*Top Navigation */
 
 #borderlinesNav {
@@ -230,13 +187,10 @@ h3 {
 
 ul#topnav{
 	list-style-type: none;
-	/*margin: 10px;
-	padding: 20px;*/
 	overflow: hidden;
 	color: #2A5B78;
 	font-size: 21px;
 	text-align: center;
-	/*background-color: #ffff78; */
 }
 
 	ul#topnav li {
@@ -263,6 +217,7 @@ ul#topnav{
 #about {
     border-bottom-style: solid;
     padding: 10px;
+    background-color: #FFB7CF;
 }
 
 .aboutme{
@@ -270,24 +225,22 @@ ul#topnav{
 	margin-right: auto;
 	text-align: left;
 	display: inline-block;
+	width:59%;
+	float: right;
+	 background-color: #E55B88;
 }
 
 /* Circular Photo */
-
-img {
-	display: block;
-    margin: auto;
-    width: 40%;
-    padding: 2em;
-}
 
 #circle {
 	display: inline-block;
     margin: auto;
     width: 40%;
-    /*float: left;*/
+    float: left;
     padding: 2em;
     border-radius: 80%;
+    float:left;
+    background-color: #E582A2;
 }
 
 /* Button */
@@ -334,35 +287,126 @@ img {
     padding: 10px;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+#skillswrapper{
+	margin: auto;
+	padding: .5em;
+}
+
+.skillitems{
+  	padding: .45em;
+  	margin: 0.1em;
+  	float: left;
+	/*width: 33%;*/
+}
+	#skill1{
+		width: 33%;
+
+	}
+	#skill2{
+		width: 33%;
+	}
+	#skill3{
+		width: 33%;
+	}
+
+.skilltext{
+	text-align: center;
+}
+
 .iconFeatured {
     width: 100px;
     height: 100px;
-    margin: 0 auto;
-    background: red;
+    margin: .5em auto;
+    background: #ffff78;
     border-radius: 80%;
 }
 
 #work-progress{
-
+	text-align: left;
+	padding-left: 20px;
+	margin-bottom: .2em;
+}
+#work-progress1{
+	text-align: left;
+	padding: 2px 20px;
 }
 
-/* Progress Bar */
+#work-progress2{
+	margin: .5em 0 0 0;
+}
 
-h3 #spacing{
+h3 #progressspacing{
 	float: right;
 	margin-right: 60px;
 }
 
-.skillsList {
-    text-align: left;
+/*#skillsList {
+    float:left;
+    margin: .2em;
+}*/
+
+#skillListItems{
+	text-align: left;
     font-weight: 200;
     list-style-type: none;
-    /*float:left;*/
+    float:left;
+}
+
+.skillListItems{
+	float:left;
+	margin: 3px;
+	width: 31%;
+}
+
+#progressmeters{
+	display: inline-block;
+}
+
+#meter1{
+	margin: .2em auto;
+}
+
+#meter2{
+	margin: .5em auto;
+}
+#meter3{
+	margin: .2em auto;
+}
+
+#meter4{
+	margin: .5em auto;
+}
+#meter5{
+	margin: .2em auto;
+}
+
+#meter6{
+	margin: .5em auto;
+}
+#meter7{
+	margin: .2em auto;
+}
+
+#meter8{
+	margin: .5em auto;
+}
+#meter9{
+	margin: .2em auto;
 }
 
 /*Found on Web for experimentation*/
 .meter { 
-	height: 20px;  /* Can be anything */
+	height: 15px;  /* Can be anything */
+	width: 685px;
 	position: relative;
 	background: #555;
 	-moz-border-radius: 25px;
@@ -370,36 +414,19 @@ h3 #spacing{
 	border-radius: 25px;
 	padding: 10px;
 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	float: right;
 }
 
 	/* Green Meter */
 		.meter > span {
-		  display: block;
-		  height: 100%;
-		  border-top-right-radius: 8px;
-		  border-bottom-right-radius: 8px;
-		  border-top-left-radius: 20px;
-		  border-bottom-left-radius: 20px;
-		  background-color: rgb(43,194,83);
-		  background-image: linear-gradient(
-		    center bottom,
-		    rgb(43,194,83) 37%,
-		    rgb(84,240,84) 69%
-		  );
-		  box-shadow: 
-		    inset 0 2px 9px  rgba(255,255,255,0.3),
-		    inset 0 -2px 6px rgba(0,0,0,0.4);
-		  position: relative;
-		  overflow: hidden;
+		  
 		}
 		.orange > span {
-		  background-color: #f1a165;
-		  background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+
 		}
 
 		.red > span {
-		  background-color: #f0a3a3;
-		  background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+
 		}
 
 /* Portfolio */
@@ -409,16 +436,36 @@ h3 #spacing{
     border-bottom-style: solid;
 }
 
-#project1{
+.portfoliopieces{
+	background: #fff;
+   /* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+	/*padding: .45em;*/
+  	margin: 0.1em;
+  	float: left;
+}
 
+#project1{
+	width: 33%;
 }
 
 #project2{
-	
+	width: 33%;
 }
 
 #project3{
-	
+	width: 33%;
+}
+#project4{
+	width: 33%;
+}
+
+#project5{
+	width: 33%;
+}
+
+#project6{
+	width: 33%;
 }
 
 /* Portfolio Nav */
@@ -523,6 +570,8 @@ form {
 		text-align: center;
 		color: #62717A;
 	}
+
+
 
 
 
