@@ -519,6 +519,44 @@ form {
     height: 50%;
 }
 
+.success {
+	  padding: 1em;
+	  margin-bottom: 0.75rem;
+	  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	  color: #468847;
+	  background-color: #dff0d8;
+	  border: 2px solid #d6e9c6;
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;
+	  display:none;
+	}
+
+	.successhidden{
+		display:none;
+		/* opacity: 0; */
+	} 
+
+	.error {
+	  padding: 1em;
+	  margin-bottom: 0.75rem;
+	  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	  color: #b94a48;
+	  background-color: #f2dede;
+	  border: 1px solid rgba(185, 74, 72, 0.3);
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;
+	   display:none;
+	} 
+
+	.info{
+		font-size: 1em;
+		color: #b94a48;
+		/* letter-spacing:2px;
+		padding-left:5px; */
+	}
+
 /* Connect */
 #connect {
 	text-align: center;

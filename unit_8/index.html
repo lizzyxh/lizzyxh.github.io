@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Welcome to Lauren Hidalgo's portfolio site. Lauren is a Dallas based UI designer and graphic artist. Quality design builds credibility and trust with your user and leads to referrals and conversions. Lauren fuses a background of art &amp; technology with training in communication &amp; project management to create responsive designs centered around user motivation and client goals.">
-		<meta name="keywords" content="Lauren, Lauren Hidalgo, Lauren Hidalgo Art, Lauren Elizabeth, Lauren E, Lauren Elizabeth Hidalgo, Lauren Hidalgo Design, Hidalgo Design, Hidalgo Art, lauren hidalgo dallas, Lauren Hidalgo UX, Lauren Hidalgo UI, Dallas, Texas, Art, Design, Illustration, UX, UI, UX strategy, UI design, custom design plano, 75093, 75093 plano, 75093 dallas, 75093 design, 75230, design 75230, custom web design, User Interface Design, Illustrator, Photoshop, Indesign, Adobe, HTML, HTML5, CSS, CSS3, PHP, front-end design, front-end, front-end development, development">
+		<meta name="keywords" content="Lauren, Hidalgo, Lauren Hidalgo, Lauren Hidalgo Art, Lauren Elizabeth, Lauren E, Lauren Elizabeth Hidalgo, Lauren Hidalgo Design, Hidalgo Design, Hidalgo Art, lauren hidalgo dallas, Lauren Hidalgo UX, Lauren Hidalgo UI, Dallas, Texas, Art, Design, Illustration, UX, UI, UX strategy, UI design, custom design plano, 75093, 75093 plano, 75093 dallas, 75093 design, 75230, design 75230, custom web design, User Interface Design, Illustrator, Photoshop, Indesign, Adobe, HTML, HTML5, CSS, CSS3, PHP, front-end design, front-end, front-end development, development">
 		<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 		<!-- <link rel="stylesheet" type="text/css" href="'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i'"> -->
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -199,14 +199,20 @@
 			<div id="contact">
 				<h2>Contact Me</h2>
 				<h3>I'd love to hear from you.</h3>
-				<form action="https://formspree.io/laurenhidalgo.design@gmail.com" method="POST">
+				<div>
+					<p class="success">Thanks for reaching out! I will be in touch with you shortly.</p>
+				</div>
+				<div>
+					<p class="error">Uh-oh. An Error has occured and our server couldn't send your email. Please try again or contact me directly at laurenhidalgo.design@gmail.com.</p>
+				</div>
+				<form id="contact2" action= "email_form2.php" name="myForm" id="myForm" method="POST">
 			    	<input type="text" name="name" id="name" placeholder="Full Name" required="">
 			    	<input type="email" name="_replyto" id="email" placeholder="Email Address" required="">
 			    	<input type="text" name="subject" id="subject" placeholder="Subject" required="">
 			    	<input type="text" name="message" id="message" placeholder="Message" required=""> 
 			    	<br>
 			    	<input type="submit" class="button" value="Submit">
-			    	<input type="hidden" name="_next" value="Thanks for Reaching out!">
+			    	<!-- <input type="hidden" name="_next" value="Thanks for Reaching out!"> -->
 				</form>
 			</div>
 			<!-- Footer -->
@@ -224,6 +230,7 @@
 			</div> 
 		</footer>
 		<!-- Scripts -->
-		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<!-- <script src="assets/js/jquery.scrolly.min.js"></script> -->
+		<script src="assets/js/onsubmit_event.js"></script>
 	</body>
 </html>
