@@ -309,7 +309,6 @@ h3 #progressspacing{
     border: 2.4px solid rgba(221, 221, 221, 0.55);
 	display: inline-block;
 }
-
 	/* Teal Meter */
 		span.ratingteal{
 			width: 96%;
@@ -346,6 +345,31 @@ h3 #progressspacing{
 		    padding: .56em;
 		    position: relative;
 		}	
+/* Fill Meter Animation */		
+	.meter > span {
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+		.meter > span:after, .animate > span > span {
+			content: "";
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			overflow: hidden;
+		}
+		
+		.animate > span:after {
+			display: none;
+		}
+		
+		@-webkit-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
 
 /* Portfolio */
 #portfolio {

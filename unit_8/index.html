@@ -9,6 +9,9 @@
 		<meta name="keywords" content="Lauren, Hidalgo, Lauren Hidalgo, Lauren Hidalgo Art, Lauren Elizabeth, Lauren E, Lauren Elizabeth Hidalgo, Lauren Hidalgo Design, Hidalgo Design, Hidalgo Art, lauren hidalgo dallas, Lauren Hidalgo UX, Lauren Hidalgo UI, Dallas, Texas, Art, Design, Illustration, UX, UI, UX strategy, UI design, custom design plano, 75093, 75093 plano, 75093 dallas, 75093 design, 75230, design 75230, custom web design, User Interface Design, Illustrator, Photoshop, Indesign, Adobe, HTML, HTML5, CSS, CSS3, PHP, front-end design, front-end, front-end development, development">
 		<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 		<!-- <link rel="stylesheet" type="text/css" href="'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i'"> -->
+		 <!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
 	<body>
@@ -230,7 +233,19 @@
 			</div> 
 		</footer>
 		<!-- Scripts -->
-		<!-- <script src="assets/js/jquery.scrolly.min.js"></script> -->
-		<script src="assets/js/onsubmit_event.js"></script>
+			<script src="assets/js/onsubmit_event.js"></script>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+			<script>
+				$(function() {
+					$(".meter > span").each(function() {
+						$(this)
+							.data("origWidth", $(this).width())
+							.width(0)
+							.animate({
+								width: $(this).data("origWidth")
+							}, 1200);
+					});
+				});
+			</script>
 	</body>
 </html>
