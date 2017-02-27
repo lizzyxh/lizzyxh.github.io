@@ -355,8 +355,9 @@ h3 #progressspacing{
 		    padding: .56em;
 		    position: relative;
 		}	
+		
 /* Fill Meter Animation */		
-	.meter > span {
+/*	.meter > span {
 			height: 100%;
 			position: relative;
 			overflow: hidden;
@@ -379,7 +380,7 @@ h3 #progressspacing{
 		    100% {
 		       background-position: 50px 50px;
 		    }
-		}
+		}*/
 
 /* Portfolio */
 #portfolio {
