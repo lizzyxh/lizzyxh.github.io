@@ -231,6 +231,12 @@ p#width{
     letter-spacing: .03em;
     margin: .2em auto;
 }
+.skillitems h3{
+  	padding: 0em;
+}
+.skillitems p{
+  	padding: 0em;
+}
 	#skill1{
 		width: 33%;
 	}
@@ -246,11 +252,15 @@ p#width{
 }
 
 .iconFeatured {
-    width: 8em;
-    height: 8em;
+    width: 7.5em;
+    height: 7.5em;
     margin: .5em auto;
-    background: #ffff78;
+    background: #f3fffd;
     border-radius: 80%;
+    padding: 0em;
+}
+
+.graphicdesignicon, .uidesignicon, .developmenticon {
 }
 
 #work-progress{
@@ -589,7 +599,12 @@ form {
 }
 
 #socialicon{
+	width: 5em;
+}
 
+#socialicon:hover{
+    background: #009fff;
+    border-radius: 80%;
 }
 
 /* Copyright */
