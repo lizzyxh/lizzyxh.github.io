@@ -389,6 +389,11 @@ h3 #progressspacing{
 		}
 
 /* Portfolio */
+
+h3#portfoliodes{
+	padding-bottom: 1em; 
+}
+
 #portfolio {
     border-bottom: 4px solid #e3f8f3;
     padding-bottom: 2em;
@@ -402,10 +407,13 @@ h3 #progressspacing{
 
 .portfoliopieces{
 	width: 33.33333%;
+	height: 22em;
     text-align: center;
   	padding: 0.15em;
   	float: left;
 }
+
+
 
 /*#project1{
 	width: 33%;
@@ -443,6 +451,7 @@ figcaption{
     font-weight: 400;
     letter-spacing: .07em;
     text-decoration: none;
+   /* height: 8em;*/
 }
 
 figcaption h3{
@@ -557,7 +566,7 @@ form {
 #message {
     display: inline-block;
     width: 50%;
-    height: 50%;
+  /*  height: 50%;*/
 }
 
 .success {
@@ -792,6 +801,7 @@ form {
 	.portfoliopieces {
     	width:100%;
     	padding-bottom: .3em;
+    	/*height: 22em;*/
 	}
 
 	/* Contact */
@@ -938,8 +948,11 @@ form {
 	.portfoliopieces {
     	width:50%;
     	padding-bottom: .3em;
+    	/*height: 22em;*/
 	}
+
 }
+
 
 @media only screen and (min-width: 900px) and (max-width: 1200px){
 /* Portfolio Nav */
@@ -972,6 +985,7 @@ form {
 			}
 	.portfoliopieces {
     	width:50%;
+    	/*height: 22em;*/
     	padding-bottom: .3em;
 	}
 }
