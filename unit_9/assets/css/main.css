@@ -399,18 +399,43 @@ h3#portfoliodes{
     padding-bottom: 2em;
 }
 
+.portfoliopieces{
+	width: 33.33333%;
+    text-align: center;
+  	padding: 0em 0.15em 0em .15em;
+  	float: left;
+  	height: 24em;
+}
+
 .portfoliopieces a{
 	background: rgb(248, 248, 248);
     display: block;
     width:100%;
+    padding-bottom: .15em;
+    margin-bottom: 1em;
+    color: #2A5B78;
+    text-decoration: none;
 }
 
-.portfoliopieces{
-	width: 33.33333%;
-	height: 22em;
+.portfoliopieces a:hover{
+	color: rgb(0, 159, 255);
+    text-decoration: none;
+}
+
+.portfoliopieces h3{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    padding: 1em .5em .5em .5em;
     text-align: center;
-  	padding: 0.15em;
-  	float: left;
+    font-weight: 400;
+    letter-spacing: .07em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.portfoliopieces p{
+	text-align: center;
+	text-transform: none;
 }
 
 
@@ -438,43 +463,6 @@ h3#portfoliodes{
 	width: 33%;
 }
 */
-figure{
-
-}
-
-figcaption{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    display: inline-block;
-    padding: 1em .5em .5em .5em;
-    color: #2A5B78;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: .07em;
-    text-decoration: none;
-   /* height: 8em;*/
-}
-
-figcaption h3{
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 400;
-    letter-spacing: .07em;
-}
-
-figcaption p{
-	text-align: center;
-	text-transform: none;
-}
-
-figcaption a{
-    color: #2A5B78;
-    text-decoration: none;
-}
-
-figcaption a:hover{
-    color: rgb(0, 159, 255);
-    text-decoration: none;
-}
 
 /* Portfolio Nav */
 
@@ -781,6 +769,9 @@ form {
 		padding-left: 0em;
 		padding-right: 0em;
 		}
+		#portfolio{
+			padding-bottom: 3em; 
+		}
 		ul.portfolionav li {
 		    padding: .3em;
 		}
@@ -801,7 +792,6 @@ form {
 	.portfoliopieces {
     	width:100%;
     	padding-bottom: .3em;
-    	/*height: 22em;*/
 	}
 
 	/* Contact */
@@ -948,7 +938,7 @@ form {
 	.portfoliopieces {
     	width:50%;
     	padding-bottom: .3em;
-    	/*height: 22em;*/
+    	height: 22.5em;
 	}
 
 }
@@ -985,8 +975,21 @@ form {
 			}
 	.portfoliopieces {
     	width:50%;
-    	/*height: 22em;*/
-    	padding-bottom: .3em;
+    	margin-bottom: 2em;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px){
+	.portfoliopieces {
+    	height: 25em;
+    	margin-bottom: 3em;
+	}
+}
+
+@media only screen and (min-width: 720px) and (max-width: 960px){
+	.portfoliopieces {
+    	height: 22.5em;
+    	margin-bottom: 3em;
 	}
 }
 
