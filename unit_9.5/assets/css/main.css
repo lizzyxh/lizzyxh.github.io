@@ -100,6 +100,11 @@ img {
     width: 100%;
 }
 
+strong{
+	color: #50e3c2;
+	border-bottom: 1px solid #50e3c2;
+}
+
 /* Logo */
 
 	#logo {
@@ -115,7 +120,7 @@ img {
 	#logo2 {
 	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	    font-weight: normal;
-	    color: #2A5B78;
+	    color: #50e3c2;
 	    text-align: center;
 	    text-transform: uppercase;
 	}
@@ -131,7 +136,7 @@ img {
 ul#topnav{
 	list-style-type: none;
 	overflow: hidden;
-	color: #2A5B78;
+	color: #555;
 	font-size: 1.16em;
 	text-align: center;
 }
@@ -147,14 +152,14 @@ ul#topnav{
 		    text-decoration: none;
     		text-align: center;
     		font-weight: 400;
-    		color: #2A5B78;
+    		color: #555;
     		letter-spacing: .07em;
     		padding: .78em 2.78em;
 		}
 
 		ul#topnav li a:hover{
 			text-decoration: none;
-			color: #009FFF;
+			color: #50e3c2;
 		}
 
 /* Circular Photo */
@@ -192,8 +197,10 @@ ul#topnav{
 		 font-weight: 300; 
 	}
 
-.name{
+span.name{
 	font-weight: 300;
+	color:#50e3c2;
+	border-bottom: 1px solid #50e3c2;
 }
 
 #download {
@@ -315,7 +322,6 @@ h3 #progressspacing{
 	/* Teal Meter */
 		span.ratingteal{
 			width: 0;
-			/*width: 96%;*/
 		    display: block;
 		    background: #50E3C2;
 		    border-radius: 30px;
@@ -332,7 +338,6 @@ h3 #progressspacing{
 	/* Lime Meter */
 		span.ratinglime{
 			width: 0;
-			/*width: 83%;*/
 		    display: block;
 		    background: #7ED321;
 		    border-radius: 30px;
@@ -349,7 +354,6 @@ h3 #progressspacing{
 	/* Mint Meter */
 		span.ratingmint{
 			width: 0;
-			/*width: 54%;*/
 		    display: block;
 		    background: #B8E986;
 		    border-radius: 30px;
@@ -366,7 +370,6 @@ h3 #progressspacing{
 	/* Yellow Meter */
 		span.ratingyellow{
 			width: 0;
-			/*width: 25%;*/
 		    display: block;
 		    background: #FFFBC2;
 		    border-radius: 30px;
@@ -378,7 +381,7 @@ h3 #progressspacing{
 			transition: all 1.5s ease-in-out;
 		}
 		span.ratingyellow.active{
-			width:25%;
+			width:18%;
 		}
 
 /* Portfolio */
@@ -397,8 +400,6 @@ h3#portfoliodes{
     text-align: center;
   	padding: 0em 0.15em 0em .15em;
   	float: left;
-  	/*height: 24em;*/
-  	/*background: orange;*/
   	position: relative;
 }
 
@@ -440,18 +441,16 @@ h3#portfoliodes{
 	-moz-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
     transform:translateX(-50%);
-    /*display: none;*/
     opacity: 0;
     z-index: 99;
 }
 
 .portfoliopieces:hover h3{
-	/*display: block;*/
 	opacity: 1;
-	-webkit-transition:opacity ease-in-out .8s;
-	-moz-transition:opacity ease-in-out .8s;
-	-o-transition:opacity ease-in-out .8s;
-	transition:opacity ease-in-out .8s;
+	-webkit-transition:opacity ease-in-out .5s;
+	-moz-transition:opacity ease-in-out .5s;
+	-o-transition:opacity ease-in-out .5s;
+	transition:opacity ease-in-out .5s;
 	color: #fff;
 }
 
@@ -524,25 +523,76 @@ h3#portfoliodes{
 /* Case Studies */
 
 .casestudies{
-	background: pink;
+	/*background: pink;*/
 	border-bottom: 4px solid #e3f8f3;
     padding-bottom: 2em;
 }
 
 .lightbox{
-	background: orange;
-	padding: 1em;
-	margin: 1em;
+	/*background: orange;*/
+/*	padding: 1em;
+	margin: 1em;*/
 	width: 50%;
 	float: left;
 }
+
+.lightboxthumb{
+	display: inline-block;
+	width: 32.7%;
+    margin-top: .3em;
+}
+
 .return{
 	float: right;
 }
 
 .studycontent{
-	background: blue;
+	width:50%;
+	padding: 0em;
+	padding-left: 2em;
+	/*background: aliceblue;*/
 	float: right;
+}
+
+.studycontent header{
+	text-align: left;
+    padding: 0;
+    margin-top: 13.5%;
+    margin-left: 0em;
+}
+
+.studycontent header h2 {
+    font-weight: 400;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.studycontent header p{
+	text-align: left;
+	font-size: 0.9em;
+    letter-spacing: 0.15em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.studycontent header > :first-child:after {
+    content: '';
+    display: block;
+    background-color: #50e3c2;
+    height: 1px;
+    margin: .6em 0 .75em 0;
+    width: 4em;
+}
+
+.studycontent p{
+	text-align: left;
+}
+
+.studycontent h2{
+	text-align: left;
+	padding: 0;
+	margin: 0;
 }
 
 /* Portfolio Nav */
@@ -552,7 +602,7 @@ ul.portfolionav{
 	margin: 10px;
 	padding: 1.12em;
 	overflow: hidden;
-	color: #2A5B78;
+	color: #555;
 	font-size: 1em;
 	text-align: center;
 	text-transform: uppercase;
@@ -570,7 +620,7 @@ ul.portfolionav{
 			text-decoration: none;
 			text-align: center;
 		    padding: .78em 2.78em;
-			color: #2A5B78;
+			color: #555;
     		text-align: center;
     		text-transform: uppercase;
     		font-weight: 400;
@@ -581,7 +631,7 @@ ul.portfolionav{
 				background-color: rgba(221, 221, 221, 0.28);
 			}			
 		ul.portfolionav li a:hover{
-			color: #009FFF;
+			color: #50e3c2;
 		}
 
 /* Contact */
@@ -688,7 +738,7 @@ form {
 }
 
 #socialicon:hover{
-    background: #009fff;
+    background: #dff0d8;
     border-radius: 80%;
 }
 
@@ -702,28 +752,36 @@ form {
 /* Button */
 
 .button {
-    -webkit-appearance: none;
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
     position: relative;
     display: inline-block;
-    /*color: rgb(98, 113, 122);*/
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 1em;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.74902) 0px 2px 1px 0px inset;
     background-color: rgb(248, 248, 248);
     margin-top: 12px;
     transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition:background-color 0.2s ease-in-out;
     outline: 0px;
     border-radius: 8px;
     overflow: hidden;
     padding: .67em 1.33em;
     letter-spacing: .08em;
-
-    color: #2A5B78;
+    color: #555;
 }
+	.button.small {
+		font-size: 0.8em;
+	}
 		.button:hover{
-			background-color: #009FFF;
+			background-color: #50e3c2;
 			color: #fff !important;
 		}
 
@@ -771,10 +829,12 @@ form {
 		background-color: #fff;
 		z-index: 99999;
 	}
+
 	#logo{
 		font-size: 3em;
 		padding-top: 1em;
 		padding-bottom: 0em;
+		margin-bottom: 0em;
 	}
 	/* Circular Photo */
 
@@ -867,7 +927,7 @@ form {
 				background-color: #f4f4f4;
 			}
 			ul.portfolionav li a:hover{
-				color: #009FFF;
+				color: #50e3c2;
 			}
 
 	.portfoliopieces {
@@ -897,6 +957,42 @@ form {
 	#emailFooter{
 		text-align: center;
     	word-wrap: break-word;
+	}
+
+	/*Case Studies*/	
+
+	.lightbox{
+	/*	padding: 1em;
+		margin: 1em;*/
+		width: 100%;
+		float: none;
+	}
+
+	.lightboxthumb{
+		width: 32%;
+	}
+
+	.return{
+		float: right;
+	}
+
+	.studycontent{
+		width:100%;
+		margin: 0em;
+		padding: 0em;
+		float: none;
+	}
+	.studycontent header{
+		text-align: left;
+		margin-top: .2em;
+	}
+	.studycontent h2{
+		text-align: left;
+	    padding: 0;
+	    margin: 0;
+	    display: inline-block;
+	    font-size: 1.5em;
+	    margin-top: 1em;
 	}
 
 }
@@ -936,6 +1032,7 @@ form {
 		font-size: 3em;
 		padding-top: 1em;
 		padding-bottom: 0em;
+		margin-bottom: 0em;
 	}
 
 /* Circular Photo */
@@ -1025,13 +1122,49 @@ form {
 				background-color: #f4f4f4;
 			}
 			ul.portfolionav li a:hover{
-				color: #009FFF;
+				color: #50e3c2;
 			}
 	.portfoliopieces {
     	width:50%;
 	}
 	.portfoliopieces:hover p{
 		padding-top: 2.5em;
+	}
+
+	/*Case Studies*/	
+
+	.lightbox{
+	/*	padding: 1em;
+		margin: 1em;*/
+		width: 100%;
+		float: none;
+	}
+
+	.lightboxthumb{
+		width: 32%;
+	}
+
+	.return{
+		float: right;
+	}
+
+	.studycontent{
+		width:100%;
+		margin: 0em;
+		padding: 0em;
+		float: none;
+	}
+	.studycontent header{
+		text-align: left;
+		margin-top: .2em;
+	}
+	.studycontent h2{
+		text-align: left;
+	    padding: 0;
+	    margin: 0;
+	    display: inline-block;
+	    font-size: 1.5em;
+	    margin-top: 2em;
 	}
 
 }
@@ -1064,10 +1197,32 @@ form {
 				background-color: #f4f4f4;
 			}
 			ul.portfolionav li a:hover{
-				color: #009FFF;
+				color: #50e3c2;
 			}
 	.portfoliopieces {
     	width:50%;
+	}
+
+	/*Case Studies*/	
+
+	.lightbox{
+		width: 50%;
+		float: left;
+	}
+
+	.lightboxthumb{
+		width: 32%;
+	}
+
+	.return{
+		float: right;
+	}
+
+	.studycontent{
+		padding-left: 1.5em;
+	}
+	.studycontent h2{
+	    margin-top: 0em;
 	}
 }
 
