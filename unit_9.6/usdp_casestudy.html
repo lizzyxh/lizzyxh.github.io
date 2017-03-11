@@ -12,8 +12,7 @@
 		 <!--[if lt IE 9]>
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
-        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.theme.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
@@ -36,17 +35,17 @@
 				<!-- Case Study -->
 				<div class="casestudies clearfix">	
 					<article>
-						<figure class="lightbox owl-carousel owl-theme">
-						<div class="carousel_images">	
+						<figure class="lightbox">
+						<div class=".one-time">	
 							<img src="images/pic02.jpg" alt=""/>
 						</div>
-						<div class="carousel_images">
+						<div class=".one-time">
 							<img src="images/pic01.jpg" alt=""/>
 						</div>	
-						<div class="carousel_images">
+						<div class=".one-time">
 							<img src="images/pic03.jpg" alt=""/>
-						</div>	
-						<div class="carousel_images">
+						</div >	
+						<div class=".one-time">
 							<img src="images/pic04.jpg" alt=""/>
 						</div>
 							<!-- 
@@ -83,13 +82,17 @@
 			</footer>
 		<!-- Scripts -->
 			<script src="assets/js/onsubmit_event.js"></script>
-			<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+			<script type="text/javascript" src="assets/js/slick.js"></script>
+			<script type="text/javascript" src="assets/js/slick.min.js"></script>
 			<script> 
 					$(document).ready(function(){
-  						$('.owl-carousel').owlCarousel();
-  						items:1,
-    					margin:10,
-    					autoHeight:true
+					  $('.one-time').slick({
+					    dots: true,
+					  	infinite: true,
+					  	speed: 300,
+					  	slidesToShow: 1,
+					 	 adaptiveHeight: true
+					  });
 					});
 			</script>
 	</body>
