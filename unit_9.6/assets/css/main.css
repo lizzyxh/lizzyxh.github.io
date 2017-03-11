@@ -524,6 +524,10 @@ h3#portfoliodes{
     padding-bottom: 2em;
 }
 
+#casestudybutton{
+	float: left;
+}
+
 div.carousel_images{
 	padding: 0em;
 }
@@ -557,7 +561,7 @@ div.carousel_images{
 .studycontent header{
 	text-align: left;
     padding: 0;
-    margin-top: 13.5%;
+   /* margin-top: 13.5%;*/
     margin-left: 0em;
 }
 
@@ -994,6 +998,14 @@ form {
 	    font-size: 1.5em;
 	    margin-top: 1em;
 	}
+	#casestudybutton{
+		float: left;
+		margin-right: 1em;
+	}
+	#casestudybutton2{
+		float: right;
+		margin-right: 1em;
+	}
 
 }
 
@@ -1167,6 +1179,15 @@ form {
 	    margin-top: 2em;
 	}
 
+	#casestudybutton{
+		float: left;
+		margin-right: 1em;
+	}
+	#casestudybutton2{
+		float: right;
+		margin-right: 1em;
+	}
+
 }
 
 
@@ -1223,6 +1244,10 @@ form {
 	}
 	.studycontent h2{
 	    margin-top: 0em;
+	}
+		#casestudybutton2{
+		float: left;
+		margin-right: 1em;
 	}
 }
 

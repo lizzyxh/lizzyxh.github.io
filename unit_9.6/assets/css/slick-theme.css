@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 99;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -70,7 +71,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: .30;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -79,11 +80,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 5px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 5px;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +98,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 5px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 5px;
 }
 .slick-next:before
 {
@@ -117,6 +118,7 @@
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
+    padding-top: 1em;
 }
 
 .slick-dots
@@ -200,5 +202,67 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #50e3c2;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+        .slick-dotted.slick-slider
+        {
+            padding-top: 0em;
+        }
+        .slick-prev,.slick-next
+        {
+            visibility: hidden;
+        }
+        div.slick-slide{
+            padding-left: 0.15em;
+            padding-right: 2em;
+        }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+        .slick-dotted.slick-slider
+        {
+            padding-top: 0em;
+        }
+        div.slick-slide{
+            padding-left: 0.15em;
+            padding-right: 2em;
+        }
+        .slick-prev
+        {
+            left: 27px;
+        }
+        .slick-next 
+        {
+            right: 27px;
+        }
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+     .slick-dotted.slick-slider
+        {
+            /*padding-top: 3.5em;*/
+        }
+        .slick-prev, .slick-next{
+             top: 50%;
+        }
+        .slick-prev
+        {
+            left: 5px;
+        }
+        .slick-next 
+        {
+            right: 5px;
+        }
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 960px){
+
+}
+
