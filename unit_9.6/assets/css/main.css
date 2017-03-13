@@ -421,6 +421,7 @@ h3#portfoliodes{
     position: absolute;
     top: 20px;
     left: 25px;
+    color: #50e3c2;
 }
 
 .portfoliopieces h3{
@@ -638,6 +639,40 @@ ul.portfolionav{
 			color: #50e3c2;
 		}
 
+	#alldesign{
+
+	}
+	.all{
+
+	}
+
+	#graphicdesign{
+
+	}
+	.graphicdesign{
+
+	}
+	#uidesign{
+		
+	}
+	.ui{
+
+	}
+	#development{
+
+	}
+	.development{
+
+	}
+
+	#misc{
+
+	}
+	.misc{
+
+	}
+	
+
 /* Contact */
 
 #contact {
@@ -728,6 +763,10 @@ form {
 		color: #b94a48;
 		/* letter-spacing:2px;
 		padding-left:5px; */
+	}
+
+	#contactMessage{
+		text-transform: none;
 	}
 
 /* Connect */
