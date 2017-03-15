@@ -616,26 +616,26 @@ ul.portfolionav{
     border-bottom-style: solid;
 }
 
-	ul.portfolionav li {
+	ul.portfolionav li{
 		text-decoration: none;
 		display: inline-block;
 	}
 
-		ul.portfolionav li a{
+		ul.portfolionav li{
 			text-decoration: none;
 			text-align: center;
 		    padding: .78em 2.78em;
 			color: #555;
     		text-align: center;
     		text-transform: uppercase;
-    		font-weight: 400;
+    		font-weight: 500;
     		letter-spacing: .07em;
 		}
-		ul.portfolionav li a:active{
+		ul.portfolionav li:active{
 				color: #009FFF;
 				background-color: rgba(221, 221, 221, 0.28);
 			}			
-		ul.portfolionav li a:hover{
+		ul.portfolionav li:hover{
 			color: #50e3c2;
 		}
 
@@ -671,7 +671,7 @@ ul.portfolionav{
 	.misc{
 
 	}
-	
+
 
 /* Contact */
 
@@ -957,19 +957,16 @@ form {
 			padding-bottom: 3em; 
 		}
 		ul.portfolionav li {
-		    padding: .3em;
-		}
-		ul.portfolionav li a {
+			padding: .3em;
 			display: block;
     		font-size: 16px;
     		padding: 5px 15px;
-
 		}
-			ul.portfolionav li a:active{
+			ul.portfolionav li:active{
 				color: #009FFF;
 				background-color: #f4f4f4;
 			}
-			ul.portfolionav li a:hover{
+			ul.portfolionav li:hover{
 				color: #50e3c2;
 			}
 
@@ -1160,19 +1157,17 @@ form {
 		padding-left: 0em;
 		padding-right: 0em;
 		}
+
 		ul.portfolionav li {
-		    padding: .3em;
-		}
-		ul.portfolionav li a {
     		font-size: 16px;
     		padding: 5px 15px;
 
 		}
-			ul.portfolionav li a:active{
+			ul.portfolionav li:active{
 				color: #009FFF;
 				background-color: #f4f4f4;
 			}
-			ul.portfolionav li a:hover{
+			ul.portfolionav li:hover{
 				color: #50e3c2;
 			}
 	.portfoliopieces {
@@ -1244,19 +1239,17 @@ form {
 		padding-left: 0em;
 		padding-right: 0em;
 		}
+
 		ul.portfolionav li {
-		    padding: .3em;
-		}
-		ul.portfolionav li a {
     		font-size: 16px;
     		padding: 5px 15px;
 
 		}
-			ul.portfolionav li a:active{
+			ul.portfolionav li:active{
 				color: #009FFF;
 				background-color: #f4f4f4;
 			}
-			ul.portfolionav li a:hover{
+			ul.portfolionav li:hover{
 				color: #50e3c2;
 			}
 	.portfoliopieces {

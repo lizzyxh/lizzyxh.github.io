@@ -135,10 +135,10 @@
 					<h3 id="portfoliodes">Explore My Recent Work.</h3>
 						<nav id="portfolioNav">
 							<ul class="portfolionav filtersList">
-								<li id="alldesign" class="is-checked" data-filter="*"><a href="#">All</a></li>
-								<li data-filter="graphicdesign" id="graphicdesign"><a href="#">Graphic Design</a></li>
-								<li data-filter="uidesign" id="uidesign"><a href="#">UI Design</a></li>
-								<li data-filter="development" id="development"><a href="#">Development</a></li>
+								<li id="alldesign" class="is-checked" data-filter="*">All</li>
+								<li data-filter=".graphicdesign" id="graphicdesign">Graphic Design</li>
+								<li data-filter=".uidesign" id="uidesign">UI Design</li>
+								<li data-filter=".development" id="development">Development</li>
 							</ul>
 						</nav>
 					<div class="grid">		
@@ -254,12 +254,22 @@
 			</div> 
 			</footer>
 			<!-- Scripts -->
+			<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
 			<script src="assets/js/onsubmit_event.js"></script>
 			<script src="assets/js/isotope.pkgd.min.js"></script>
-			<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
 			<script>
 				$(function() {
 					$(".meter >span").addClass("active");
+					var $grid = $('.grid').isotope({
+					  itemSelector: '.portfoliopieces',
+					  layoutMode: 'fitRows'
+					});
+					$('.filtersList').on( 'click', 'li', function() {
+					  var filterValue = $( this ).attr('data-filter');
+					  // use filterFn if matches value
+					  // filterValue = filterFns[ filterValue ] || filterValue;
+					  $grid.isotope({ filter: filterValue });
+					});
 				});
 			</script>
 	</body>
