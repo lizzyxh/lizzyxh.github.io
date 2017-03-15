@@ -973,13 +973,20 @@ form {
 	.portfoliopieces {
     	width:100%;
     	padding-bottom: .3em;
+    	margin: auto -6%;
 	}
+
+	.portfoliopieces h4 {
+    	left: 16px;
+	}
+	
 	#mobilespacing{
 		padding-top: 2.5em;
 	}
 
 	.portfoliopieces p{
 		opacity: 1;
+		left: 16px;
 	}
 
 	.portfoliopieces:hover h3{
@@ -1172,6 +1179,7 @@ form {
 			}
 	.portfoliopieces {
     	width:50%;
+    	margin: auto 20%;
 	}
 	.portfoliopieces:hover p{
 		padding-top: 2.5em;
