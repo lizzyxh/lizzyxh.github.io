@@ -1262,6 +1262,7 @@ form {
 			}
 	.portfoliopieces {
     	width:50%;
+    	margin: auto;
 	}
 
 	/*Case Studies*/	
@@ -1289,7 +1290,7 @@ form {
 		float: left;
 		margin-right: 1em;
 	}
-}
+} 
 
 @media only screen and (min-width: 700px) and (max-width: 960px){
 	.portfoliopieces:hover p{
