@@ -256,13 +256,18 @@
 			<!-- Scripts -->
 			<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
 			<script src="assets/js/onsubmit_event.js"></script>
+			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 			<script src="assets/js/isotope.pkgd.min.js"></script>
 			<script>
 				$(function() {
 					$(".meter >span").addClass("active");
+		
 					var $grid = $('.grid').isotope({
 					  itemSelector: '.portfoliopieces',
 					  layoutMode: 'fitRows'
+					});
+					$grid.imagesLoaded().progress( function() {
+					  $grid.isotope('layout');
 					});
 					$('.filtersList').on( 'click', 'li', function() {
 					  var filterValue = $( this ).attr('data-filter');
@@ -270,6 +275,7 @@
 					  // filterValue = filterFns[ filterValue ] || filterValue;
 					  $grid.isotope({ filter: filterValue });
 					});
+
 				});
 			</script>
 	</body>
