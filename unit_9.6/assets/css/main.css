@@ -108,8 +108,8 @@ strong{
 	    font-size: 4em;
 	    text-align: center;
 	    text-transform: uppercase;
-	    margin-top: 25px;
-	    margin-bottom: 30px;
+	    margin-top: 0px;
+	    margin-bottom: 0px;
 	    font-weight: lighter;
 	}
 
@@ -119,6 +119,14 @@ strong{
 	    color: #50e3c2;
 	    text-align: center;
 	    text-transform: uppercase;
+	}
+	#logosubheading{
+		font-family: Lato, lighter, Arial, sans-serif;
+		font-size: 2.55em;
+	    text-align: center;
+	    padding: 0em;
+	    text-transform: uppercase;
+	    font-weight: lighter;
 	}
 
 /*Top Navigation */
@@ -523,6 +531,7 @@ h3#portfoliodes{
 	/*background: pink;*/
 	border-bottom: 4px solid #e3f8f3;
     padding-bottom: 2em;
+    padding-top: 0em;
 }
 
 #casestudybutton{
@@ -874,10 +883,16 @@ form {
 	}
 
 	#logo{
-		font-size: 3em;
-		padding-top: 1em;
+		font-size: 2em;
+		padding-top: 2.2em;
 		padding-bottom: 0em;
 		margin-bottom: 0em;
+	}
+	#logosubheading{
+		font-size: 1.26em;
+	    text-align: center;
+	    padding: 0em;
+	    text-transform: uppercase;
 	}
 	/* Circular Photo */
 
@@ -1085,9 +1100,12 @@ form {
 	}
 	#logo{
 		font-size: 3em;
-		padding-top: 1em;
+		padding-top: 1.5em;
 		padding-bottom: 0em;
 		margin-bottom: 0em;
+	}
+	#logosubheading {
+    	font-size: 1.9em;
 	}
 
 /* Circular Photo */
@@ -1201,7 +1219,7 @@ form {
 	.return{
 		float: right;
 	}
-
+	
 	.studycontent{
 		width:100%;
 		margin: 0em;

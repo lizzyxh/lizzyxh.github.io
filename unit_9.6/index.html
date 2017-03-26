@@ -13,13 +13,13 @@
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<!-- Header/Aside -->
 		<header>
-			<h1 id="logo">Lauren <span id="logo2">Hidalgo </span>Design</h1>
+			<h1 id="logo">Lauren <span id="logo2">Hidalgo </span></h1>
+			<div id="logosubheading">UI Design & Development</div>
 		</header>
 
 		<main>
@@ -261,12 +261,12 @@
 			<script>
 				$(function() {
 					$(".meter >span").addClass("active");
-		
 					var $grid = $('.grid').isotope({
 					  itemSelector: '.portfoliopieces',
 					  layoutMode: 'fitRows'
-					});
-					$grid.imagesLoaded().progress( function() {
+					})
+					$grid.imagesLoaded().progress(
+					function() {
 					  $grid.isotope('layout');
 					});
 					$('.filtersList').on( 'click', 'li', function() {
@@ -275,8 +275,9 @@
 					  // filterValue = filterFns[ filterValue ] || filterValue;
 					  $grid.isotope({ filter: filterValue });
 					});
-
 				});
 			</script>
+
+			
 	</body>
 </html>
