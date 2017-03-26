@@ -502,6 +502,10 @@ h3#portfoliodes{
    	opacity: .5;
 }
 
+#mobilespacing{
+	padding-top: 2.9em;
+}
+
 /*.portfoliopieces:nth-of-type(1){
 }
 
@@ -998,6 +1002,9 @@ form {
 	#mobilespacing{
 		padding-top: 2.5em;
 	}
+	#mobilespacing2{
+		padding-top: 2.5em;
+	}
 
 	.portfoliopieces p{
 		opacity: 1;
@@ -1203,6 +1210,10 @@ form {
 		padding-top: 2.5em;
 	}
 
+	#mobilespacing2{
+		padding-top: 2.5em;
+	}
+
 	/*Case Studies*/	
 
 	.lightbox{
@@ -1219,7 +1230,7 @@ form {
 	.return{
 		float: right;
 	}
-	
+
 	.studycontent{
 		width:100%;
 		margin: 0em;
@@ -1288,6 +1299,10 @@ form {
 	.lightbox{
 		width: 50%;
 		float: left;
+	}
+	.lightbox2{
+		width: 50%;
+		float: right;
 	}
 
 	.lightboxthumb{
