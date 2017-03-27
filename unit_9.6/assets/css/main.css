@@ -98,7 +98,12 @@ img {
 
 strong{
 	color: #50e3c2;
+	text-decoration: none;
 	/*border-bottom: 1px solid #50e3c2;*/
+}
+
+a{
+	text-decoration: none;
 }
 
 /* Logo */
@@ -127,6 +132,19 @@ strong{
 	    padding: 0em;
 	    text-transform: uppercase;
 	    font-weight: lighter;
+	}
+
+	.link{
+		color: #50e3c2;
+		text-decoration: none;
+		border-bottom: 1px solid #919191;
+	    border-color: #50e3c2;
+	}
+	.link:hover{
+		color: #62717A;
+		text-decoration: none;
+		border-bottom: 1px solid #62717A;
+	    border-color: #62717A;
 	}
 
 /*Top Navigation */
@@ -540,6 +558,7 @@ h3#portfoliodes{
 
 #casestudybutton{
 	float: left;
+	margin-right: 2.4em;
 }
 
 div.carousel_images{
