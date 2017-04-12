@@ -521,6 +521,7 @@ h3#portfoliodes{
     margin-bottom: 1em;
     color: #fff;
     text-decoration: none;
+    text-shadow: 2px 2px 25px black;
 }
 
 .portfoliopieces a:hover{
