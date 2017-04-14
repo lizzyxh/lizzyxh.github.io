@@ -213,6 +213,13 @@ ul#topnav{
     padding-bottom: 2em;
     padding: .56em;
 }
+.about{
+	background: url("backgroundimages/pencil-education-pencil-sharpener-art-159731.jpeg"); 
+	background-size: 90%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
 
 .aboutme{
 	margin-left: auto;
@@ -1351,7 +1358,7 @@ form {
 	}
 	.lightbox2{
 		width: 50%;
-		float: right;
+		margin: auto;
 	}
 
 	.lightboxthumb{

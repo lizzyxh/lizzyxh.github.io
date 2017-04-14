@@ -50,6 +50,7 @@
     color: transparent;
     outline: none;
     background: transparent;
+    opacity: .50;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -72,7 +73,7 @@
     line-height: 1;
 
     opacity: .30;
-    color: white;
+    color: #555;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
