@@ -64,6 +64,7 @@ p {
     line-height: 1.5em;
     letter-spacing: .02em;
     margin: .67em auto;
+    text-align: center;
 }
 
 ul{
@@ -1089,7 +1090,7 @@ form {
 	.lightbox2{
 	width: 90%;
 	margin: auto;
-}
+	}
 
 	.lightboxthumb{
 		width: 32%;
