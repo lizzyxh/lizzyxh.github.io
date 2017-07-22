@@ -69,7 +69,7 @@
 							<aside class="clearfix" >
 								<div class="skillrows">
 									<h4 class="skillListItems">HTML/CSS3</h4>
-									<div class="meter" id="meter1">
+									<div class="meter" >
 										<span class="ratinglime"></span>
 									</div>	
 								</div>
@@ -85,11 +85,11 @@
 										<span class="ratingmint"></span>
 									</div>
 								</div>
-								<div class="skillrows">	
+								<div class="skillrows">
 									<h4 class="skillListItems">Photoshop</h4>
-									<div class="meter" id="meter4">
+									<div class="meter" >
 										<span class="ratinglime"></span>
-									</div>
+									</div>	
 								</div>	
 								<div class="skillrows">
 									<h4 class="skillListItems">Illustrator</h4>
@@ -169,6 +169,14 @@
 					  // filterValue = filterFns[ filterValue ] || filterValue;
 					  $grid.isotope({ filter: filterValue });
 					});
+				});
+			</script>
+			<script type="text/javascript">
+				$(window).on('scroll', function() {
+					if($(window).scrollTop() > 800){
+						console.log('it works!');
+						$('.ratinglime').addClass('.meter1');
+					}
 				});
 			</script>
 
