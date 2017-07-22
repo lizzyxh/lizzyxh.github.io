@@ -405,10 +405,10 @@ h3 #progressspacing{
 		}
 		.meter1{
 			display: block;
-			-webkit-transition: all 1.5s ease-in-out;
-			-moz-transition: all 1.5s ease-in-out;
-			-o-transition: all 1.5s ease-in-out;
-			transition: all 1.5s ease-in-out;
+			-webkit-transition: all 10s ease-in-out;
+			-moz-transition: all 10s ease-in-out;
+			-o-transition: all 10s ease-in-out;
+			transition: all 10s ease-in-out;
 		}
 
 		span.ratinglime.active{
